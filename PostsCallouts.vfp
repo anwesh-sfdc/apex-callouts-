@@ -1,0 +1,18 @@
+<apex:page controller="PostsCallouts" title="TableData">
+<apex:form >
+<apex:pageBlock >			
+
+<apex:pageBlockTable value="{!restcallout}" var="post" width="100%" border="2" >
+<apex:column headerValue="Id" value="{!post.Id}" />
+
+<apex:column headerValue="UserId" value="{!post.UserId}"/>
+
+<apex:column headerValue="Title" value="{!post.Title}"/>
+
+<apex:column headerValue="Body" value="{!post.Body}"/>
+</apex:pageBlockTable>
+
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>
